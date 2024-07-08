@@ -78,7 +78,7 @@ const login = async (login_request) => {
         cel: user_db.cel
     }
 
-    const sign_options = { expiresIn: '60s' }
+    const sign_options = { expiresIn: '300s' }
 
     const token = jwt.sign(payload, process.env.TOKEN, sign_options)
 
