@@ -17,4 +17,4 @@ const register = async question_request => {
     return response(true, message.question_created, new_question)
 }
 
-export default register
+export{ register}
